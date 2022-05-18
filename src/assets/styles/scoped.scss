@@ -1,0 +1,118 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+@function vw($px-vw, $base-vw: 1920) {
+  @return ($px-vw * 100vw) / $base-vw
+}
+
+
+.site {
+  padding-top: 77.5px;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+
+  @media (max-width: 1440px) {
+    max-width: 1000px;
+  }
+}
+.button {
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  transition: .3s;
+  display: flex;
+  width: fit-content;
+  text-decoration: none;
+
+  &--stroked {
+    border: 1px solid #386DF5;
+    border-radius: 4px;
+    color: #386DF5;
+    @media (pointer: fine) {
+      &:hover {
+        background: #ECF1FE;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      background: #386DF5;
+      color: #fff;
+    }
+  }
+}
+
+
+.form-row {
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+    margin-top: 26px;
+  }
+  &__input {
+    padding: 13px 13px 13px 56px;
+    width: 100%;
+    border: 1px solid #9E9E9E;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2A2A2A;
+    transition: .3s;
+    outline: none;
+
+    &:invalid:not(:placeholder-shown) {
+      border-color: red;
+    }
+
+    &:focus {
+      border-color: #386DF5;
+
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+
+    &::placeholder {
+      color: #9E9E9E;
+      transition: .3s;
+    }
+
+    &--name {
+      background: #fff url("~/src/assets/images/icons/icon-name.svg") no-repeat 16px center / 24px 24px;
+    }
+    &--email {
+      background: #fff url("~/src/assets/images/icons/icon-email.svg") no-repeat 16px center / 24px 24px;
+    }
+  }
+
+  &__submit {
+    padding: 6px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    background: #386DF5;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .3s;
+    @media (pointer: fine) {
+      &:hover {
+        background: #2A2A2A;
+        color: #fff;
+      }
+    }
+  }
+}

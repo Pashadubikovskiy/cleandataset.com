@@ -1,0 +1,109 @@
+.site-footer {
+  position: relative;
+  background: #373C4D;
+  margin-top: auto;
+
+  &__container {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    width: 170px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: .3s;
+
+    @media (max-width: 1023px) {
+      margin: 12px;
+    }
+    @media (pointer: fine) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.site-copy {
+  background: #2B2E3C;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 0;
+
+    font-size: 14px;
+    line-height: 19px;
+    color: #626B89;
+
+    @media (max-width: 567px) {
+      flex-direction: column;
+      padding: 8px;
+      text-align: center;
+    }
+  }
+
+  &__separator {
+    @media (max-width: 567px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    margin: 0 5px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #626B89;
+    text-decoration: none;
+    @media (pointer: fine) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.site-footer-link {
+  $self: &;
+  margin-right: auto;
+
+  @media (max-width: 1023px) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &__fill {
+    fill: #fff;
+  }
+
+  &__stroke {
+    stroke: #fff;
+  }
+
+
+  &__fill {
+    transition: fill .3s;
+  }
+  &__stroke {
+    transition: stroke .3s;
+  }
+}
+
+.router-link-active {
+  text-decoration: underline;
+}

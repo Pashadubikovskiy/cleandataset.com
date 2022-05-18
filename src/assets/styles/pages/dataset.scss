@@ -1,0 +1,354 @@
+@import "../scoped";
+.dataset-page {
+  padding-bottom: 45px;
+  &__section {
+    padding: 20px 0 0;
+  }
+}
+
+.dataset-hero {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("~/src/assets/images/datasets/mask.svg") no-repeat center / cover;
+    content: '';
+  }
+
+  &--blue {
+    background: #386DF5;
+  }
+  &--yellow {
+    background: #F4AD24;
+  }
+  &--red {
+    background: #BF313A;
+  }
+  &--purple {
+    background: #A238F5;
+  }
+  &--green {
+    background: #549611;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  &__text {
+    min-width: 470px;
+    margin-right: 100px;
+    padding: 20px 0;
+    max-width: 100%;
+
+    @media (min-width: 1920px) {
+      max-width: vw(470);
+      margin-right: vw(100);
+      padding: vw(20) 0;
+    }
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+      z-index: 3;
+      min-width: unset;
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+
+    @media (min-width: 1920px) {
+      font-size: vw(48);
+      margin-bottom: vw(16);
+    }
+    @media (max-width: 1023px) {
+      font-size: 32px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F5F5F5;
+
+    @media (min-width: 1920px) {
+      font-size: vw(16);
+      line-height: vw(24);
+    }
+
+    img {
+      width: 24px;
+      margin-right: 8px;
+
+      @media (min-width: 1920px) {
+        width: vw(24);
+        margin-right: vw(8);
+      }
+    }
+  }
+
+  &__image {
+    min-width: 653px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url("~/src/assets/images/datasets/circle-arrow.svg") no-repeat center / 160% 100%;
+
+    @media (min-width: 1920px) {
+      min-width: vw(653);
+      height: vw(280);
+    }
+    @media (max-width: 1023px) {
+      min-width: 350px;
+      height: 250px;
+    }
+    @media (max-width: 567px) {
+      margin-left: -70px;
+      margin-right: -80px;
+      min-width: 220px;
+    }
+
+    img {
+      width: 176px;
+
+      @media (min-width: 1920px) {
+        width: vw(176);
+      }
+      @media (max-width: 1023px) {
+        width: 120px;
+      }
+      @media (max-width: 567px) {
+        width: 80px;
+      }
+    }
+  }
+}
+.dataset-section {
+  &__container {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+    }
+  }
+  &__text {
+    max-width: 770px;
+    background: #F5F5F5;
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+    padding: 24px;
+
+    @media (max-width: 768px) {
+      border-radius: 4px;
+    }
+  }
+  &__result {
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  &__aside {
+    max-width: 370px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 100%;
+
+    padding: 24px;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+}
+.dataset-aside {
+  &__description {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #9E9E9E;
+    margin-bottom: 16px;
+  }
+
+  &__logo {
+    background: #F5F5F5;
+    border-radius: 4px;
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 8px;
+
+    img {
+      width: 170px;
+    }
+  }
+}
+.dataset-section-text {
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 32px;
+    color: #2A2A2A;
+    margin-bottom: 16px;
+
+    @media (max-width: 1023px) {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  &__list {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5C5C5C;
+
+    column-count: 2;
+    column-gap: 32px;
+
+    @media (max-width: 1023px) {
+      column-count: 1;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+.dataset-text {
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 32px;
+    color: #2A2A2A;
+
+    @media (max-width: 1023px) {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5C5C5C;
+  }
+
+  &__links {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+.dataset-text-links {
+  &__item {
+    flex: 23%;
+    max-width: 23%;
+
+    @media (max-width: 1023px) {
+      max-width: unset;
+      flex: unset;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+  }
+}
+.dataset-text-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 8px 7px;
+
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  text-decoration: none;
+
+  color: #2A2A2A;
+  background: #F5F5F5;
+  transition: .3s;
+
+  @media (max-width: 1023px) {
+    padding: 8px 12px;
+  }
+
+    &--red {
+      &:hover {
+        background: #FBEFF0;
+        color: #BD313A;
+      }
+    }
+
+    &--blue {
+      &:hover {
+        background: #ECF1FE;
+        color: #386DF5;
+      }
+    }
+
+    &--yellow {
+      &:hover {
+        background: #FCF7ED;
+        color: #CD911D;
+      }
+    }
+
+    &--green {
+      &:hover {
+        background: #c7e8a7;
+        color: #549611;
+      }
+    }
+
+    &--purple {
+      &:hover {
+        background: #F6ECFE;
+        color: #8A35CD;
+      }
+    }
+}
+::v-deep {
+  p {
+    margin: 16px 0;
+  }
+}
+
+.form-row {
+  &__submit {
+    padding: 10px;
+    width: 100%;
+  }
+
+  &:last-child {
+    margin-top: 16px;
+  }
+}

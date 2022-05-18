@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 279">
+  <g filter="url(#a)" opacity=".2">
+    <ellipse cx="1813" cy="-22.5" fill="#fff" rx="178" ry="156.5"/>
+  </g>
+  <g filter="url(#b)" opacity=".2">
+    <ellipse cx="1453" cy="199.5" fill="#2A2A2A" rx="178" ry="156.5"/>
+  </g>
+  <g filter="url(#c)" opacity=".2">
+    <ellipse fill="#fff" rx="178" ry="156.5" transform="matrix(-1 0 0 1 7 41.5)"/>
+  </g>
+  <g filter="url(#d)" opacity=".2">
+    <ellipse fill="#2A2A2A" rx="178" ry="156.5" transform="matrix(-1 0 0 1 367 263.5)"/>
+  </g>
+  <defs>
+    <filter id="a" width="556" height="513" x="1535" y="-279" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_61_1874" stdDeviation="50"/>
+    </filter>
+    <filter id="b" width="556" height="513" x="1175" y="-57" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_61_1874" stdDeviation="50"/>
+    </filter>
+    <filter id="c" width="556" height="513" x="-271" y="-215" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_61_1874" stdDeviation="50"/>
+    </filter>
+    <filter id="d" width="556" height="513" x="89" y="7" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_61_1874" stdDeviation="50"/>
+    </filter>
+  </defs>
+</svg>
